@@ -5,9 +5,9 @@ This program helps you study countries and capitals of **Latin America**. The pr
 The interface is totally command-line. No pretty graphics or GUIs.
 
 ##Running the Program
-To compile, type ```make```
+To compile the program, type ```make```
 
-To run the program, type ```make run```
+To compile and run the program, type ```make run```
 
 ##More Detailed Instructions
 * Given a country name, type the its capital.
