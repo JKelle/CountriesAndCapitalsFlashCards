@@ -49,6 +49,19 @@ void init() {
     allCards.push_back(std::make_pair("Guyana", "Georgetown"));
 }
 
+void intro() {
+    std::cout << std::endl;
+    std::cout << "+===================================================================+" << std::endl;
+    std::cout << "| Given a country name, type the its capital.                       |" << std::endl;
+    std::cout << "| Spelling and capitalization must be correct.                      |" << std::endl;
+    std::cout << "| Incorrectly answered cards will display the                       |" << std::endl;
+    std::cout << "| correct answer and will be put back into the deck.                |" << std::endl;
+    std::cout << "| The program will end once all cards have been correctly answered. |" << std::endl;
+    std::cout << "| You can press \"control + c\" to end the program at any time.       |" << std::endl;
+    std::cout << "+===================================================================+" << std::endl;
+    std::cout << std::endl;
+}
+
 std::queue<std::pair<std::string, std::string> > shuffleDeck(std::vector<std::pair<std::string, std::string> > allCards) {
     srand(time(0));
     std::queue<std::pair<std::string, std::string> > deck;
@@ -61,6 +74,7 @@ std::queue<std::pair<std::string, std::string> > shuffleDeck(std::vector<std::pa
 }
 
 int main() {
+    intro();
     init();
     std::queue<std::pair<std::string, std::string> > deck = shuffleDeck(allCards);
 
@@ -74,7 +88,7 @@ int main() {
         getline(std::cin, response);
 
         if(response != capital) {
-            std::cout << "Wrong. The answer was " << capital << std::endl;
+            std::cout << "Wrong. The answer was " << capital << "." << std::endl;
             deck.push(deck.front());
         }
         deck.pop();
@@ -83,33 +97,3 @@ int main() {
     std::cout << "Done!" << std::endl;
     return 0;
 }
-
-
-/*
-Mexico - Mexico City
-Belize - Belmopan
-Guatamala - Guatamala City
-Honduras - Tegucigalpa
-Nicaragua - Managua
-El Salvador - San Salvador
-Costa Rica - San Jose
-Panama - Panama City
-Cuba - Havana
-Haiti - Port-au-Prince
-Dominican Republic - Santo Domingo
-Puerto Rico - San Juan
-Jamaica - Kingston
-Columbia - Bogata
-Venezuela - Caracas
-Ecuador - Quito
-Peru - Lima
-Bolivia - La Paz or Sucre
-Chile - Santiago
-Argentina - Buenos Aires
-Uruguay - Montevideo
-Paraguay - Asuncion
-Brazil - Brasilia
-French Guiana - Cayenne
-Suriname - Paramaribo
-Guyana - Georgetown
-*/
