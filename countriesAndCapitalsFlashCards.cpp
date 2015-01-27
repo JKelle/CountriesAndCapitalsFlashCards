@@ -13,7 +13,7 @@ void init() {
 
     // Central America
     allCards.push_back(std::make_pair("Belize", "Belmopan"));
-    allCards.push_back(std::make_pair("Guatamala", "Guatamala City"));
+    allCards.push_back(std::make_pair("Guatemala", "Guatemala City"));
     allCards.push_back(std::make_pair("Honduras", "Tegucigalpa"));
     allCards.push_back(std::make_pair("Nicaragua", "Managua"));
     allCards.push_back(std::make_pair("El Salvador", "San Salvador"));
