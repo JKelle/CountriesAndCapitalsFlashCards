@@ -1,6 +1,6 @@
 # CountriesAndCapitalsFlashCards
 
-This program helps you study countries and capitals of *Latin America*. The program gives you the name of a country, and you have to provide the correct capital. It's similar to flash cards.
+This program helps you study countries and capitals of **Latin America**. The program gives you the name of a country, and you have to provide the correct capital. It's similar to flash cards.
 
 The interface is totally command-line. No pretty graphics or GUIs.
 
