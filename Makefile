@@ -1,5 +1,10 @@
-all:
-	g++ countriesAndCapitalsFlashCards.cpp -o flashCards
+all: flashCards
 
-run: all
-	./flashCards
+flashCards:
+	@g++ countriesAndCapitalsFlashCards.cpp -o flashCards	
+
+run: flashCards
+	@./flashCards
+
+clean:
+	@rm -f flashCards
